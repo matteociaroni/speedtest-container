@@ -3,7 +3,7 @@
 Simple Dockerfile to build a container for speedtests.
 Remember to set the SERVER_ID enviromental variable.
 
-## Tutorial
+## Installation
 
 1. Replace the URL and the filename to extract with the right one for your CPU architecture (you can choose it from the [Ookla website](https://www.speedtest.net/apps/cli))
 2. Create a new folder (i.e. _folder-path_) and paste the Dockerfile into it
@@ -11,7 +11,7 @@ Remember to set the SERVER_ID enviromental variable.
 4. After the build process, Docker will provide the image ID (i.e. _image-id_)
 5. Run the container with `docker run --env SERVER_ID image-id`
 
-## Options
+### Options
 
 - Container name can be set with `--name container-name`
 - Using `--rm` option in run instruction the container will be deleted after the speedtest
